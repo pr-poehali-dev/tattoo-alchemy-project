@@ -42,22 +42,8 @@ const Index = () => {
   const artists = [
     {
       id: 1,
-      name: 'Александр Черный',
-      specialty: 'Реализм, портреты',
-      experience: '8 лет',
-      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/665a817d-d958-4b9f-a6e0-2b35634ae6ae.jpg'
-    },
-    {
-      id: 2,
-      name: 'Мария Грей',
-      specialty: 'Орнаменты, графика',
-      experience: '6 лет',
-      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/ec5dfe05-ca85-43f8-a2df-86c4dc2678ed.jpg'
-    },
-    {
-      id: 3,
-      name: 'Дмитрий Вулф',
-      specialty: 'Блэкворк, дотворк',
+      name: 'Ануфрович Людмила',
+      specialty: 'Все стили татуировки',
       experience: '10 лет',
       image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/599e969e-5161-4b3d-97d4-0a7c1af95175.jpg'
     }
@@ -124,8 +110,8 @@ const Index = () => {
           </div>
           <div className="text-center">
             <Icon name="Star" size={48} className="mx-auto mb-4" />
-            <h3 className="text-2xl mb-2">3 мастера</h3>
-            <p className="text-muted-foreground">Профессионалов</p>
+            <h3 className="text-2xl mb-2">1 мастер</h3>
+            <p className="text-muted-foreground">Профессионал</p>
           </div>
         </div>
       </section>
@@ -162,8 +148,8 @@ const Index = () => {
 
       <section id="artists" className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-12">НАШИ МАСТЕРА</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-12">НАШ МАСТЕР</h2>
+          <div className="max-w-md mx-auto">
             {artists.map((artist) => (
               <Card key={artist.id} className="bg-card border-border p-6">
                 <div className="aspect-square mb-6 overflow-hidden">
@@ -268,14 +254,14 @@ const Index = () => {
                   <Icon name="MapPin" size={24} className="mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold mb-1">Адрес</h3>
-                    <p className="text-muted-foreground">г. Москва, ул. Примерная, д. 123</p>
+                    <p className="text-muted-foreground">г. Архангельск, Троицкий пр-кт, д. 119</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Icon name="Phone" size={24} className="mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold mb-1">Телефон</h3>
-                    <p className="text-muted-foreground">+7 (495) 123-45-67</p>
+                    <p className="text-muted-foreground">+7 996 276-24-50</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -289,7 +275,7 @@ const Index = () => {
                   <Icon name="Clock" size={24} className="mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold mb-1">Режим работы</h3>
-                    <p className="text-muted-foreground">Ежедневно с 12:00 до 21:00</p>
+                    <p className="text-muted-foreground">Ежедневно с 10:00 до 22:00</p>
                   </div>
                 </div>
               </div>
