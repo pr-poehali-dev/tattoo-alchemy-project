@@ -81,6 +81,46 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none opacity-10">
+        <svg className="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="tribal-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+              <path d="M100,20 Q120,40 100,60 Q80,40 100,20 Z M100,80 L120,100 L100,140 L80,100 Z M40,100 Q60,120 40,140 Q20,120 40,100 Z M160,100 Q180,120 160,140 Q140,120 160,100 Z" 
+                    fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white/20"/>
+              <circle cx="100" cy="100" r="3" fill="currentColor" className="text-red-600/40"/>
+              <path d="M100,150 L90,180 L110,180 Z" fill="currentColor" className="text-white/15"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#tribal-pattern)"/>
+        </svg>
+        
+        <div className="absolute top-0 right-0 w-96 h-96 opacity-20">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100,30 Q130,60 100,90 Q70,60 100,30 M100,110 L130,140 L100,180 L70,140 Z" 
+                  fill="none" stroke="currentColor" strokeWidth="2" className="text-red-500"/>
+            <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" strokeWidth="1.5" 
+                    strokeDasharray="5,5" className="text-white/30"/>
+          </svg>
+        </div>
+        
+        <div className="absolute bottom-20 left-10 w-80 h-80 opacity-15 rotate-45">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100,20 L120,80 L180,80 L130,120 L150,180 L100,140 L50,180 L70,120 L20,80 L80,80 Z" 
+                  fill="none" stroke="currentColor" strokeWidth="2" className="text-white/40"/>
+            <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="1" 
+                    className="text-red-600/30"/>
+          </svg>
+        </div>
+        
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 opacity-10">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100,50 Q150,75 150,100 Q150,125 100,150 Q50,125 50,100 Q50,75 100,50" 
+                  fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white/30"/>
+            <path d="M100,70 L100,130 M70,100 L130,100" stroke="currentColor" strokeWidth="1" className="text-red-700/40"/>
+          </svg>
+        </div>
+      </div>
+      
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 right-10 w-96 h-96 bg-red-900/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-40 left-20 w-80 h-80 bg-red-800/10 rounded-full blur-3xl"></div>
