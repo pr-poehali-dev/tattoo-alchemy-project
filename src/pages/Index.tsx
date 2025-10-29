@@ -80,17 +80,23 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 right-10 w-96 h-96 bg-red-900/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-40 left-20 w-80 h-80 bg-red-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 right-1/3 w-60 h-60 bg-red-950/8 rounded-full blur-3xl"></div>
+      </div>
+      
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold">TATTOO ALCHEMY</h1>
           <div className="hidden md:flex gap-6">
-            <a href="#home" className="hover:text-muted-foreground transition-colors">Главная</a>
-            <a href="#portfolio" className="hover:text-muted-foreground transition-colors">Портфолио</a>
-            <a href="#artists" className="hover:text-muted-foreground transition-colors">Мастера</a>
-            <a href="#services" className="hover:text-muted-foreground transition-colors">Услуги</a>
-            <a href="#booking" className="hover:text-muted-foreground transition-colors">Запись</a>
-            <a href="#contacts" className="hover:text-muted-foreground transition-colors">Контакты</a>
+            <a href="#home" className="hover:text-red-400 transition-colors">Главная</a>
+            <a href="#portfolio" className="hover:text-red-400 transition-colors">Портфолио</a>
+            <a href="#artists" className="hover:text-red-400 transition-colors">Мастера</a>
+            <a href="#services" className="hover:text-red-400 transition-colors">Услуги</a>
+            <a href="#booking" className="hover:text-red-400 transition-colors">Запись</a>
+            <a href="#contacts" className="hover:text-red-400 transition-colors">Контакты</a>
           </div>
           <Button variant="outline" size="sm" className="md:hidden">
             <Icon name="Menu" size={20} />
@@ -107,10 +113,10 @@ const Index = () => {
             Превращаем идеи в искусство на коже. Профессиональная татуировка в черно-белой эстетике.
           </p>
           <div className="flex gap-4 justify-center">
-            <Button size="lg" className="px-8">
+            <Button size="lg" className="px-8" onClick={() => document.getElementById('booking')?.scrollIntoView({behavior: 'smooth'})}>
               Записаться на сеанс
             </Button>
-            <Button size="lg" variant="outline" className="px-8">
+            <Button size="lg" variant="outline" className="px-8" onClick={() => document.getElementById('portfolio')?.scrollIntoView({behavior: 'smooth'})}>
               Портфолио
             </Button>
           </div>
