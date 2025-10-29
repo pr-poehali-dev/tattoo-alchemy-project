@@ -42,21 +42,21 @@ const Index = () => {
   const portfolioWorks = [
     {
       id: 1,
-      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/599e969e-5161-4b3d-97d4-0a7c1af95175.jpg',
-      title: 'Реализм',
-      category: 'Рукав'
+      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/70d18da3-e93c-43cf-b59d-b093f2d47e81.jpg',
+      title: 'Геометрия',
+      category: 'Минимализм'
     },
     {
       id: 2,
-      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/665a817d-d958-4b9f-a6e0-2b35634ae6ae.jpg',
-      title: 'Детали',
-      category: 'Процесс'
+      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/04ff4f9f-9448-45ce-9da5-8b190df44d96.jpg',
+      title: 'Блэкворк',
+      category: 'Рукав'
     },
     {
       id: 3,
-      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/ec5dfe05-ca85-43f8-a2df-86c4dc2678ed.jpg',
-      title: 'Орнамент',
-      category: 'Мандала'
+      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/606eb0b5-07a3-4a36-8262-96228f59bde8.jpg',
+      title: 'Реализм',
+      category: 'Портрет'
     }
   ];
 
@@ -65,7 +65,7 @@ const Index = () => {
       id: 1,
       name: 'Ануфрович Людмила',
       specialty: 'Все стили татуировки',
-      experience: '10 лет',
+      experience: '1 год',
       image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/599e969e-5161-4b3d-97d4-0a7c1af95175.jpg'
     }
   ];
