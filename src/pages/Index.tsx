@@ -42,21 +42,21 @@ const Index = () => {
   const portfolioWorks = [
     {
       id: 1,
-      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/70d18da3-e93c-43cf-b59d-b093f2d47e81.jpg',
-      title: 'Геометрия',
-      category: 'Минимализм'
+      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/d99aecd3-3bdb-4d4a-80b4-a09c7da75d24.jpg',
+      title: 'Реализм',
+      category: 'Портрет'
     },
     {
       id: 2,
-      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/04ff4f9f-9448-45ce-9da5-8b190df44d96.jpg',
-      title: 'Блэкворк',
-      category: 'Рукав'
+      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/79c9a989-835f-4854-b78e-7f4460b984e7.jpg',
+      title: 'Гравюра',
+      category: 'Этчинг'
     },
     {
       id: 3,
-      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/606eb0b5-07a3-4a36-8262-96228f59bde8.jpg',
-      title: 'Реализм',
-      category: 'Портрет'
+      image: 'https://cdn.poehali.dev/projects/85228e9e-f379-4cca-80ca-3dd5283c68e8/files/dfdb207f-ac46-4cfb-a915-c8fd722ecb19.jpg',
+      title: 'Киберсигилизм',
+      category: 'Техномагия'
     }
   ];
 
@@ -167,7 +167,7 @@ const Index = () => {
         <div className="container mx-auto grid md:grid-cols-3 gap-8">
           <div className="text-center scroll-animate opacity-0">
             <Icon name="Award" size={48} className="mx-auto mb-4" />
-            <h3 className="text-2xl mb-2">10+ лет</h3>
+            <h3 className="text-2xl mb-2">1 год</h3>
             <p className="text-muted-foreground">На рынке</p>
           </div>
           <div className="text-center scroll-animate opacity-0" style={{animationDelay: '0.1s'}}>
