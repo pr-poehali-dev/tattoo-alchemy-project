@@ -155,10 +155,10 @@ const Index = () => {
                     alt={work.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-t from-red-950/90 via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="text-center">
                       <h3 className="text-2xl font-bold mb-2">{work.title}</h3>
-                      <p className="text-muted-foreground">{work.category}</p>
+                      <p className="text-red-200">{work.category}</p>
                     </div>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" className="border-red-800 hover:bg-red-950/30 hover:text-red-200">
               Смотреть все работы
             </Button>
           </div>
@@ -188,8 +188,8 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-2">{artist.name}</h3>
                 <p className="text-muted-foreground mb-2">{artist.specialty}</p>
-                <div className="flex items-center gap-2 text-sm">
-                  <Icon name="Clock" size={16} />
+                <div className="flex items-center gap-2 text-sm text-red-300">
+                  <Icon name="Clock" size={16} className="text-red-400" />
                   <span>Опыт: {artist.experience}</span>
                 </div>
               </Card>
@@ -203,7 +203,7 @@ const Index = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-center mb-12 scroll-animate opacity-0">УСЛУГИ И ЦЕНЫ</h2>
           <div className="space-y-4">
             {services.map((service, index) => (
-              <Card key={index} className="bg-card border-border p-6 hover:bg-secondary/50 transition-colors scroll-animate opacity-0" style={{animationDelay: `${index * 0.05}s`}}>
+              <Card key={index} className="bg-card border-border p-6 hover:bg-red-950/20 hover:border-red-900/50 transition-all scroll-animate opacity-0" style={{animationDelay: `${index * 0.05}s`}}>
                 <div className="flex justify-between items-center gap-4">
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-1">{service.name}</h3>
@@ -231,7 +231,7 @@ const Index = () => {
                   placeholder="Иван Иванов"
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  className="bg-background border-border"
+                  className="bg-background border-border focus:border-red-800 focus:ring-red-900/50"
                 />
               </div>
               <div>
@@ -240,7 +240,7 @@ const Index = () => {
                   placeholder="+7 (___) ___-__-__"
                   value={formData.phone}
                   onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                  className="bg-background border-border"
+                  className="bg-background border-border focus:border-red-800 focus:ring-red-900/50"
                 />
               </div>
               <div>
@@ -250,7 +250,7 @@ const Index = () => {
                   placeholder="example@mail.com"
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  className="bg-background border-border"
+                  className="bg-background border-border focus:border-red-800 focus:ring-red-900/50"
                 />
               </div>
               <div>
@@ -260,7 +260,7 @@ const Index = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
                   rows={5}
-                  className="bg-background border-border"
+                  className="bg-background border-border focus:border-red-800 focus:ring-red-900/50"
                 />
               </div>
               <Button type="submit" size="lg" className="w-full">
@@ -314,20 +314,20 @@ const Index = () => {
             </Card>
           </div>
           <div className="flex justify-center gap-6 mt-12">
-            <Button variant="outline" size="icon" className="rounded-full w-12 h-12">
+            <Button variant="outline" size="icon" className="rounded-full w-12 h-12 border-red-800 hover:bg-red-950/40 hover:border-red-600 transition-all">
               <Icon name="Instagram" size={20} />
             </Button>
-            <Button variant="outline" size="icon" className="rounded-full w-12 h-12">
+            <Button variant="outline" size="icon" className="rounded-full w-12 h-12 border-red-800 hover:bg-red-950/40 hover:border-red-600 transition-all">
               <Icon name="Facebook" size={20} />
             </Button>
-            <Button variant="outline" size="icon" className="rounded-full w-12 h-12">
+            <Button variant="outline" size="icon" className="rounded-full w-12 h-12 border-red-800 hover:bg-red-950/40 hover:border-red-600 transition-all">
               <Icon name="Send" size={20} />
             </Button>
           </div>
         </div>
       </section>
 
-      <footer className="py-8 px-4 border-t border-border">
+      <footer className="py-8 px-4 border-t border-red-950/20">
         <div className="container mx-auto text-center text-muted-foreground">
           <p>© 2024 Tattoo Alchemy. Все права защищены.</p>
         </div>
